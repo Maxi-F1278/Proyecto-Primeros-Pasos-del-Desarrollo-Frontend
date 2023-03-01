@@ -1,0 +1,385 @@
+/*Estilos Generales*/
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    background-image: linear-gradient(135deg,#00B7D4,#505488,#2F3F80,#161569,#5A4894,#A950A1,#FF7CAE);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+
+}
+
+@keyframes fanimado{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.giphy-embed{
+    margin-left: 500px;
+}
+
+h1 {
+    color:whitesmoke;
+    margin: 1em;
+    text-align: center;
+    font-weight: bold;
+}
+
+h2{
+    color:white;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 70px;
+    margin-block-end: 70px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 35px;
+    padding-block-end: 35px;
+    background-color: #1c1c1c;
+    box-shadow: 0px 0px 10px 0px blue;
+}
+
+h3{
+    color:whitesmoke;
+    text-shadow: 1px 1px 1px whitesmoke;
+    margin: 1em;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+h4{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border: solid;
+    margin-block-end: 5px;
+    box-shadow: 0px 0px 10px 0px powderblue;
+    border-radius: 20px;
+}
+/*Estilos Barra de Navegacion*/
+
+nav{
+    background-color: #1f132d;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 20px;
+}
+
+
+nav a {
+    color: white;
+    font-weight: bold;
+    padding: 1.5em;
+    margin: 1.5em;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Roboto Slab', serif;
+
+}
+
+nav i{
+    margin-right: 8px;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.bloque2{
+   padding-left: 15px;
+   
+}
+
+/*Estilos Informacion Personal*/
+
+.bloque3{
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+
+
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 160px;
+    border:2px solid purple;
+    box-shadow: 0px 0px 10px 0px powderblue;
+    margin-right: 20px;
+    margin-left: 550px;
+    margin-block-end: 30px;
+
+}
+.bloque3 b{
+    color:blueviolet;
+    font-size: 18px;
+}
+
+.bloque3 li{
+    list-style: none;
+    margin-left: 12px;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 1px magenta;
+    margin-block: 20px;
+    margin-block-end: 80px;
+    margin-inline: 20px;
+    font-size: 19px;
+   
+}
+
+#imagen1{
+   
+    padding-block: 0px;
+    border: solid;
+    border-color: black;
+    margin-left: 1000px;
+    margin-top: 0px;
+    display: block;
+}
+
+/*Estilos pagina Experiencia*/
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: centre;
+}
+
+.Read_btn{
+    background-color: purple;
+    margin-right: 100px;
+    border: none;
+    border-radius: 40px;
+    color:white;
+    padding: 15px 32px;
+    font-size: 1.2em;
+    box-shadow: 0px 0px 10px 0px magenta;
+    cursor: pointer;
+}
+
+.Read_btn:hoover{
+    box-shadow: none;
+    background-color: black;
+    color: white;
+    transition: cubic-bezier(0.075,0.82,0.165,1);
+}
+
+.Exp1{
+    text-align: left;
+    margin-left: 215px;
+    margin-top: 0px;
+    display: flex ;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+
+}
+
+.Exp2{
+    display:flex;
+    margin-top: 20px;
+    margin-inline: 100px;
+}
+
+/*Estilos pagina Habilidades*/
+
+.pinimg{
+    width: 70px;
+    height: 70px;
+    border-radius:160px;
+    background-color: white;
+    border:1px solid purple;
+    box-shadow: 0px 0px 10px 0px powderblue;
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    margin-block-end: 50px;
+}    
+
+.Hab1{
+    display:flex;
+}
+
+/*Estilos pagina Contacto*/
+
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin-top: 90px;
+}
+
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: whitesmoke;
+    font-weight: 700;
+
+}
+
+.container-form a i{
+    color: lightcoral;
+    margin-right: 10px;
+
+}
+.container-form form{
+    margin-block-start: 0px;
+    margin-block-end: 50px;
+}
+
+.container-form form .campo, textarea{
+    width: 100%;
+    padding:  15px 1px;
+    font-size: 15px;
+    border:1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+
+.container-form #btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: rgb(182, 5, 182);
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.container-form #btn-enviar#btn-enviar:hover{
+    background: magenta;
+}
+
+
+/*Estilos pie de pagina*/
+
+.container-footer{
+    margin-top: 100px;
+}
+
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background: #efefef;
+    border: solid;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2;
+}
+
+footer .redes-footer .fa-facebook-f:hover{
+    background: #41579A;
+    color: #fff;
+}
+
+footer .redes-footer .fa-google-plus-g:hover{
+    background: #DE4C34;
+    color: #fff;
+}
+
+footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color: #fff;
+}
+
+/*IrArriba Boton*/
+
+#button-up{
+    width: 40px;
+    height: 40px;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+#button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+
+/*Clases Formulario JS*/
+
+.green{
+    margin-top: 5px;
+    color: greenyellow;
+    font-family: sans-serif;
+    font-size: 14px;
+
+}
+
+.red{
+    margin-top: 5px;
+    color: red;
+    font-family: sans-serif;
+    font-size: 14px;
+}
