@@ -191,8 +191,9 @@ img{
 }
 
 .Exp1{
+    width: auto;
     text-align: left;
-    margin-left: 215px;
+    margin-left: 220px;
     margin-top: 0px;
     display: flex ;
     font-size: 18px;
@@ -201,10 +202,33 @@ img{
 
 }
 
+
 .Exp2{
     display:flex;
     margin-top: 20px;
-    margin-inline: 100px;
+    margin-inline: 50px;
+}
+
+#demo{
+    width: 33%;
+    display:flex;
+    margin-top: 20px;
+    margin-inline: 10px;
+
+}
+
+#demo1{
+    width: 33%;
+    display:flex;
+    margin-top: 20px;
+    margin-inline: 10px;
+}
+
+#demo2{
+    width: 33%;
+    display:flex;
+    margin-top: 20px;
+    margin-inline: 10px;
 }
 
 /*Estilos pagina Habilidades*/
@@ -224,6 +248,119 @@ img{
 
 .Hab1{
     display:flex;
+}
+
+
+/*Barra de Habilidades*/
+
+.contenedor-skills{
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 80px;
+    padding: 30px 30px 50px;
+    background: linear-gradient(450deg,darkblue,magenta);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.detalles{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.menu{
+    position: relative;
+    border: 1px solid cyan;
+    border-radius: 20px;
+}
+
+.menu div{
+    position: relative;
+    width: 0;
+    height: 8px;
+    border-radius: 10px;
+    background-color: cyan;
+}
+
+/*Animacion Barra de Progreso*/
+
+#html-menu{
+    animation: html-barra 2s forwards;
+}
+
+@keyframes html-barra{
+    100%{
+        width: 90%;
+    }
+}
+
+#CSS-menu{
+    animation: css-barra 3s forwards;
+}
+
+@keyframes css-barra{
+    100%{
+        width: 85%;
+    }
+}
+
+#Js-menu{
+    animation: js-barra 4s forwards;
+}
+
+@keyframes js-barra{
+    100%{
+        width: 70%;
+    }
+}
+
+#Python-menu{
+    animation: python-barra 5s forwards;
+}
+
+@keyframes python-barra{
+    100%{
+        width: 50%;
+    }
+}
+
+#Java-menu{
+    animation: java-barra 6s forwards;
+}
+
+@keyframes java-barra{
+    100%{
+        width: 92%;
+    }
+}
+
+#Docker-menu{
+    animation: docker-barra 6s forwards;
+}
+
+@keyframes docker-barra{
+    100%{
+        width: 60%;
+    }
+}
+
+#Azure-menu{
+    animation: azure-barra 6s forwards;
+}
+
+@keyframes azure-barra{
+    100%{
+        width: 55%;
+    }
 }
 
 /*Estilos pagina Contacto*/
@@ -256,7 +393,7 @@ img{
 }
 
 .container-form a i{
-    color: lightcoral;
+    color: whitesmoke;
     margin-right: 10px;
 
 }
